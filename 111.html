@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV Player by Country</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .logo {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .header .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .welcome-message {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            height: 45vh;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #000;
+            position: relative;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+        }
+
+        .dropdown-container {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .dropdown {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            background: #4ca1af;
+            color: #ffffff;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-bar {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            width: 80%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            margin-right: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            background: #2c3e50;
+            color: #ffffff;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .channels-list {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .channels-list li {
+            background: linear-gradient(to right, #4ca1af, #2c3e50);
+            border: 1px solid #ffffff;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .channels-list li:hover {
+            background-color: #2c3e50;
+            transform: scale(1.03);
+        }
+
+        .ad-banner {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .ad-banner img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-content {
+                padding: 10px;
+            }
+
+            .channels-list li {
+                padding: 10px;
+            }
+
+            .video-container {
+                height: 35vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Netflix_icon.svg" alt="Logo">
+            IPTV Player
+        </a>
+    </div>
+
+    <div class="main-content">
+        <div class="welcome-message">مرحبًا بك في IPTV Player. اختر دولتك للبدء.</div>
+
+        <div class="dropdown-container">
+            <select class="dropdown" id="country-select">
+                <option value="">اختر الدولة</option>
+                <!-- سيتم تحميل الدول هنا -->
+            </select>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" class="search-input" id="search-input" placeholder="ابحث عن قناة...">
+            <button class="search-button" id="search-button">بحث</button>
+        </div>
+
+        <div class="video-container" id="video-container">
+            <video id="html5-player" controls>
+                المتصفح الخاص بك لا يدعم تشغيل الفيديو.
+            </video>
+        </div>
+
+        <ul class="channels-list" id="channels-list">
+            <!-- سيتم تحميل القنوات هنا -->
+        </ul>
+
+        <div class="ad-banner">
+            <img src="https://od.lk/s/OTFfMjg1MzYyNjBf/123.png" alt="Ad Banner">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const baseUrl = 'https://raw.githubusercontent.com/iptv-org/iptv/master/streams/';
+            const countryFiles = {
+                "السعودية": "sa.m3u",
+                "الأردن": "jo.m3u",
+                "الإمارات": "ae.m3u",
+                "مصر": "eg.m3u",
+                "لبنان": "lb.m3u",
+                "الكويت": "kw.m3u",
+                "قطر": "qa.m3u",
+                "عمان": "om.m3u",
+                "البحرين": "bh.m3u",
+                "فلسطين": "ps.m3u",
+                "اليمن": "ye.m3u",
+                "العراق": "iq.m3u",
+                "الجزائر": "dz.m3u",
+                "المغرب": "ma.m3u",
+                "ليبيا": "ly.m3u",
+                "السودان": "sd.m3u",
+                "موريتانيا": "mr.m3u"
+            };
+
+            const channelsList = document.getElementById('channels-list');
+            const videoContainer = document.getElementById('video-container');
+            const videoPlayer = document.getElementById('html5-player');
+            const countrySelect = document.getElementById('country-select');
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('search-button');
+
+            // تحميل قائمة الدول في القائمة المنسدلة
+            for (const country in countryFiles) {
+                const option = document.createElement('option');
+                option.value = countryFiles[country];
+                option.textContent = country;
+                countrySelect.appendChild(option);
+            }
+
+            countrySelect.addEventListener('change', (e) => {
+                if (e.target.value) {
+                    loadChannels(e.target.value);
+                } else {
+                    channelsList.innerHTML = '';
+                    videoPlayer.src = '';
+                }
+            });
+
+            searchButton.addEventListener('click', () => {
+                const searchTerm = searchInput.value.toLowerCase();
+                const channelItems = channelsList.querySelectorAll('li');
+                channelItems.forEach(item => {
+                    if (item.textContent.toLowerCase().includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+
+            function loadChannels(file) {
+                fetch(baseUrl + file)
+                    .then(response => response.text())
+                    .then(data => {
+                        const channels = parseM3U(data);
+                        displayChannels(channels);
+                    })
+                    .catch(error => console.error('Error fetching M3U file:', error));
+            }
+
+            function parseM3U(data) {
+                const lines = data.split('\n');
+                const channels = [];
+                let currentChannel = {};
+                lines.forEach(line => {
+                    line = line.trim();
+                    if (line.startsWith('#EXTINF:')) {
+                        const info = line.split(',');
+                        currentChannel.name = info[1];
+                    } else if (line && !line.startsWith('#')) {
+                        currentChannel.url = line;
+                        channels.push(currentChannel);
+                        currentChannel = {};
+                    }
+                });
+                return channels;
+            }
+
+            function displayChannels(channels) {
+                channelsList.innerHTML = ''; // تفريغ القائمة
+                channels.forEach(channel => {
+                    const li = document.createElement('li');
+                    li.textContent = channel.name || 'قناة غير معروفة';
+                    li.addEventListener('click', () => {
+                        playChannel(channel.url);
+                    });
+                    channelsList.appendChild(li);
+                });
+            }
+
+            function playChannel(url) {
+                videoPlayer.src = url;
+                videoPlayer.load();
+                videoPlayer.play();
+                videoContainer.style.display = 'block'; // إظهار مشغل الفيديو
+            }
+        });
+    </script>
+</body>
+</html>
