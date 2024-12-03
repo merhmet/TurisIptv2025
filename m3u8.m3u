@@ -1,8 +1,8 @@
 #EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",TRT HABER
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 
-#EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png",Turis1
-http://video.eblinet.me/video/480/23.mp4
+#EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png",ATV
+https://alt.xtream-ie.org/r8E7WzEjY/LLJwdV9mB/7eyJ1cmwiOiJodHRwOi8vaHcxLmplbXR2LmNvbS9hcHAvQVRWSEQvcGxheWxpc3QubTN1OCIsImlkIjozNzAzfQ%3D%3D/fast
 
 #EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png",TRT HABER
 https://ensonhaber-live.ercdn.net/trthaber/trthaber.m3u8
