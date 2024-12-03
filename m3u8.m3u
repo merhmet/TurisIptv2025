@@ -3,6 +3,9 @@ https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",TRT HABER1
 https://fl1001.bozztv.com/ushba61/tracks-v1a1/mono.ts.m3u8
 
+#EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",HINT 
+https://rpn3.bozztv.com/dvrfl07/ushba-t4/tracks-v1a1/mono.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTIvMy8yMDI0IDEwOjUzOjMzIFBNJmhhc2hfdmFsdWU9UXFmOWJPNEhZazNPZDlGVzJKbVNHdz09JnZhbGlkbWludXRlcz0xNDQwJnN0cm1fbGVuPTI4
+
 
 #EXTINF:0 CUID="3705" tvg-chno="null" tvg-name="Atv | c" group-title="Ulusal",Atv | c
 https://alt.xtream-ie.org/r8E7WzEjY/LLJwdV9mB/7eyJ1cmwiOiJodHRwczovL3Rnbi5ib3p6dHYuY29tL3RybjAzL2d0LWF0di10di90cmFja3MtdjFhMS9tb25vLm0zdTgiLCJpZCI6MzcwNX0%3D/fast
