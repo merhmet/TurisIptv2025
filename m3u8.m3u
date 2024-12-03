@@ -1,5 +1,7 @@
 #EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",TRT HABER
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",TRT HABER1
+https://fl1001.bozztv.com/ushba61/tracks-v1a1/mono.ts.m3u8
 
 
 #EXTINF:0 CUID="3705" tvg-chno="null" tvg-name="Atv | c" group-title="Ulusal",Atv | c
