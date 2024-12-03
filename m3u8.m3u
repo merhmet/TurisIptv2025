@@ -3,6 +3,25 @@ https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",TRT HABER1
 https://fl1001.bozztv.com/ushba61/tracks-v1a1/mono.ts.m3u8
 
+
+#EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",MUSIC AND HORIZON
+https://fl1003.bozztv.com/ushba67/tracks-v1a1/mono.m3u8
+
+#EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",MIAMI T V
+https://tgn.bozztv.com/trn03/gin-miamilatino/tracks-v1a1/mono.m3u8?nimblesessionid=516395509&wmsAuthSign=c2VydmVyX3RpbWU9MTIvMy8yMDI0IDExOjAzOjExIFBNJmhhc2hfdmFsdWU9SGUxbTkrV0RRdjB2aWMrdk5jYnI0Zz09JnZhbGlkbWludXRlcz0xNDQwJnN0cm1fbGVuPTIx
+
+#EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",MIAMI T V
+https://tgn.bozztv.com/trn03/gin-miamilatino/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTIvMy8yMDI0IDExOjAzOjExIFBNJmhhc2hfdmFsdWU9SGUxbTkrV0RRdjB2aWMrdk5jYnI0Zz09JnZhbGlkbWludXRlcz0xNDQwJnN0cm1fbGVuPTIx
+
+
+
+#EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",MIAMI T V
+https://tgn.bozztv.com/trn03/gin-miamitv/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTIvMy8yMDI0IDExOjA0OjQ0IFBNJmhhc2hfdmFsdWU9S2d5akVlN1o3eUs0eHozaTdXRXFDQT09JnZhbGlkbWludXRlcz0xNDQwJnN0cm1fbGVuPTE3
+
+#EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",MIAMI T V
+https://tgn.bozztv.com/trn03/gin-miamitv/tracks-v1a1/mono.m3u8?nimblesessionid=516398008&wmsAuthSign=c2VydmVyX3RpbWU9MTIvMy8yMDI0IDExOjA0OjQ0IFBNJmhhc2hfdmFsdWU9S2d5akVlN1o3eUs0eHozaTdXRXFDQT09JnZhbGlkbWludXRlcz0xNDQwJnN0cm1fbGVuPTE3
+
+
 #EXTINF:0 tvg-logo="https://i.ibb.co/Bt6frts/trthaber.png" group-title="|TR|🇹🇷 HABER-1",MACHA AND BEAR
 https://fl1004.bozztv.com/ushba78/tracks-v1a1/mono.m3u8
 
